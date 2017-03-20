@@ -1,0 +1,121 @@
+{%load static %}
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>4.我的明星臉</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="{% static 'css/4.celebrity.css'%}?{% now "U" %}">
+
+  <style type="text/css">
+	@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+	body{
+	 background-image: url({% static 'image/22.jpg' %});
+	 background-repeat: no-repeat;
+	 background-size: 100% 1500px;
+	 height: auto;
+	 z-index:1;
+	 font-family: cwTeXYen, sans-serif;
+	}
+	html{
+         height:100%;
+         }
+         #layer{
+		 margin:0px;
+		 padding:0px;
+         background-color:black;
+         height:auto;
+         background: rgba(0, 0, 0, 0.6);
+         background-repeat: no-repeat; background-size: 100% 100%;
+         }
+	.table-users{
+		opacity:0.8;
+	}
+	.lightbox{
+		opacity:1.0;
+	}
+	element.style {
+    font-weight: bold !important;
+}
+div.center{
+
+	text-align:center;
+
+}
+.btn {
+    color: white;
+    text-align: center;
+    background-image: linear-gradient( to bottom, grey , black);
+    width: 200px;
+    height: 50px;
+    font-size: 28px;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+  </style>
+</head>
+
+<body>
+<div id="layer">
+</div>
+  <div class="table-users">
+   <div class="header">我的明星臉</div>
+   
+   <table cellspacing="0">
+      <tr>
+	 <th>排名</th>
+         <th>照片</th>
+         <th>名字</th>
+ 	 <th>相似度</th>
+      </tr>
+	{% for name in star_list%}
+      <tr>
+	 <td>{{ name.id }}</td>
+         <td><a href="{{STATIC_URL}}../../static/stars/{{ name.star_id }}.jpg" data-lightbox="photo" data-title={{ name.star_name }}><img src="{{STATIC_URL}}../../static/stars/{{ name.star_id }}.jpg" alt=""></a></td>
+         <td>{{ name.star_name }}</td>
+	 <td>{{ name.rating }}</td>
+      </tr>
+	{% endfor %}
+   </table>
+	</div>
+  <div class="center"> 
+         <a href="http://13.112.236.144:8000/web/registration" class="btn" style="font-weight:bold !important;">開始註冊</a>
+ </div>
+
+</body>
+
+
+<!-- <body>   -->
+
+<!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script> -->
+<!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.min.js'></script> -->
+<!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.min.js'></script> -->
+<!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/rxjs/4.0.7/rx.min.js'></script> -->
+
+<!-- <script src="{% static 'js/4.celebrity.js'%}?{% now "U" %} "></script> -->
+<!-- <div class="center"> -->
+	<!-- <a href="http://13.112.236.144:8000/web/registration" class="btn" style="font-weight:bold !important;">開始註冊</a> -->
+<!-- </div> -->
+<!-- </body> -->
+</html>
+

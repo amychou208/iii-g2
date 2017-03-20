@@ -1,0 +1,198 @@
+<!-- saved from url=(0077)file:///E:/%E5%B0%88%E9%A1%8C%E7%B6%B2%E7%AB%99/account%20Form01-11.html -->
+{% load static %}
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>8.基本資訊</title>
+      <style type="text/css">
+	  @import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+         body{margin:0;
+		 padding:0;
+		 opacity:0.9;background-image:url();
+         color:white;
+         background-repeat:no-repeat; 
+         background-size:cover; 
+         height:100% !important;
+         background-image: url({% static 'image/9.jpg' %});
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+		 background-attachment: fixed;
+         height: auto;
+		 font-family: cwTeXYen, sans-serif;
+         z-index:1;}
+      h3{font-size: 36pt; font-style: normal; font-weight: bold; color:white;text-align: center;
+	margin:0px; padding:30px;}
+      #layer > form > div >input {
+		border:0;
+		outline:none;
+		border-radius:0;
+		padding:15px 30px;
+		font-size:15pt;
+		text-transform:uppercase;
+		letter-spacing:.1em;
+		color: white;
+		background: #1ab188;
+		font-family: cwTeXYen, sans-serif;
+		font-size:28px;
+	  }
+	  #layer > form > div{
+		padding:30px;
+		text-align:center;
+	  }
+	  table{opacity:0.9;width:1200px;table-layout: fixed;font-family: cwTeXYen, sans-serif; font-size: 15pt; font-style: normal;text-align:;  border-collapse: collapse;box-shadow:0px 0px 3px 3px rgb(110,110,110);}
+         
+	  table.inner{border: 0px}
+      
+	  td{white-space:nowrap; font-family: cwTeXYen, sans-serif; font-size: 18pt;}
+      
+	  td:first-child {width:100px}
+      
+	  .checkbox-grid li {display: block;float: left;width: 16%;}
+      
+	  #layer{
+         background-color:black;
+         height:1200px;
+         background: rgba(0, 0, 0, 0.7);
+         background-repeat: no-repeat; background-size: 100% 100%;
+         }
+#layer > form > table > tbody > tr> td:nth-child(1){
+    width: 18%;
+    text-align: left;
+    padding: 5px 30px;
+}
+#layer > form > table > tbody > tr> td:nth-child(1){
+    font-weight: bold;
+    text-align: -internal-center;
+	font-size: 22pt;
+}
+      </style>
+   </head>
+  <body>
+  <div id="layer">
+    <h3>他的基本資訊</h3>
+    <form action="file:///E:/%E5%B0%88%E9%A1%8C%E7%B6%B2%E7%AB%99/form.php" method="POST">
+      <table align="center" cellpadding="10">
+		<tbody>
+          <tr>
+            <td>姓名</td>
+            <td>
+				{{account.account_name}}
+            </td>
+		   </tr>
+		   <tr>
+		     <td>性別</td>
+             <td> 
+				{{account.gender}}
+             </td>
+           </tr>
+		             <tr>
+            <td>星座</td>
+            <td>
+				{{account.star}}
+            </td>
+		   </tr>
+		             <tr>
+            <td>身高</td>
+            <td>
+				{{account.height}}
+            </td>
+		   </tr>
+		             <tr>
+            <td>眼睛</td>
+            <td>
+				{{account.eye}}
+            </td>
+		   </tr>
+		             <tr>
+            <td>頭髮</td>
+            <td>
+				{{account.hair}}
+            </td>
+		   </tr>
+		             <tr>
+            <td>身材</td>
+            <td>
+				{{account.figure}}
+            </td>
+		   </tr>
+	
+            <td>運動習慣</td>
+            <td>
+				{{account.wantchild}}
+            </td>
+		   </tr>
+		             <tr>
+            <td>抽菸</td>
+            <td>
+				{{account.smoke}}
+            </td>
+		   </tr>
+		  		             <tr>
+            <td>喝酒</td>
+            <td>
+				{{account.drink}}
+            </td>
+		   </tr>
+		   		             <tr>
+            <td>信仰</td>
+            <td>
+				{{account.faith}}
+            </td>
+		   </tr>
+		   		             <tr>
+            <td>職業</td>
+            <td>
+				{{account.job}}
+            </td>
+		   </tr>
+		   		             <tr>
+            <td>收入</td>
+            <td>
+				{{account.income}}
+            </td>
+		   </tr>
+		   		             <tr>
+            <td>語言</td>
+            <td>
+				{{account.language}}
+            </td>
+		   </tr>
+		   		             <tr>
+            <td>教育</td>
+            <td>
+				{{account.education}}
+            </td>
+		   </tr>
+		   		             <tr>
+            <td>政治觀點</td>
+            <td>
+				{{account.political}}
+            </td>
+		   </tr>
+		   		   		             <tr>
+            <td>關係</td>
+            <td>
+				{{account.relationship}}
+            </td>
+		   </tr>
+		   		   		             <tr>
+            <td>想要小孩</td>
+            <td>
+				{{account.sport_habbit}}
+            </td>
+		   </tr>
+		   		   		   		             <tr>
+            <td>有孩子</td>
+            <td>
+				{{account.children}}
+            </td>
+		   </tr>
+		</tbody>   
+      </table>
+	  <div class="lastInput">
+	<input type='submit' value='開始聊天吧' onclick='this.disabled=true,this.form.submit()'>
+	  </div>
+    </form>
+	</div>
+  </body>
+</html>

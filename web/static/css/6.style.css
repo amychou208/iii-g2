@@ -1,0 +1,905 @@
+* { box-sizing: border-box; }
+
+
+
+
+#submit{
+position:absolute;
+left:1800px;
+top:600px;
+}
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: #EEE;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #CAAB76;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+/* ---- isotope ---- */
+
+.grid {
+  border: 1px solid #333;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 130px;
+  margin: 5px;
+  /* padding: 10px; */
+  background: #888;
+  color: #262524;
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.element-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.element-item .symbol {
+  /* position: absolute; */
+  /* left: 25px; */
+  top: 104px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+}
+
+/* men */
+.element-item.flowerboy{ background: #F00; background: hsl(   0, 100%, 50%); }
+.element-item.sunshineboy  { background: #F80; background: hsl(  36, 100%, 50%); }
+.element-item.blueman    { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element-item.cityboy        { background: #0F0; background: hsl( 108, 100%, 50%); }
+.element-item.cuteman        { background: #1DCB8B;}
+.element-item.badman       { background: #963BCB;}
+.element-item.hipster     { background: #F1B246;}
+.element-item.matureman       { background: #E492DE;}
+/* women */
+.element-item.friendlygirl     { background: #0F8; background: hsl( 144, 100%, 50%); }
+.element-item.cutegirl { background: #0FF; background: hsl( 180, 100%, 50%); }
+.element-item.sexygirl { background: #08F; background: hsl( 216, 100%, 50%); }
+.element-item.pretty        { background: #6A9BF1;}
+.element-item.sportgirl         { background: #F0F; background: hsl( 288, 100%, 50%); }
+.element-item.hipsterwoman       { background: #F08; background: hsl( 324, 100%, 50%); }
+
+
+input[type=checkbox] {
+display:none;
+}
+/* friendlygirl */
+/*------------------------------------------------*/
+input[type=checkbox]#one:checked + label
+{
+background: url("../image/25.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}/*------------------------------------------------*/
+input[type=checkbox]#two:checked + label
+{
+background: url("../image/26.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#three:checked + label
+{
+background: url("../image/27.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#four:checked + label
+{
+background: url("../image/28.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+
+/* sexygirl */
+}/*------------------------------------------------*/
+input[type=checkbox]#five:checked + label
+{
+background: url("../image/29.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}/*------------------------------------------------*/
+input[type=checkbox]#six:checked + label
+{
+background: url("../image/30.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}/*------------------------------------------------*/
+input[type=checkbox]#seven:checked + label
+{
+background: url("../image/31.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}/*------------------------------------------------*/
+input[type=checkbox]#eight:checked + label
+{
+background: url("../image/32.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+
+
+/* cutegirl */
+}/*------------------------------------------------*/
+input[type=checkbox]#nine:checked + label
+{
+background: url("../image/33.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}/*------------------------------------------------*/
+input[type=checkbox]#ten:checked + label
+{
+background: url("../image/34.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}/*------------------------------------------------*/
+input[type=checkbox]#eleven:checked + label
+{
+background: url("../image/35.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}/*------------------------------------------------*/
+input[type=checkbox]#twelve:checked + label
+{
+background: url("../image/36.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+
+/* pretty */
+/*------------------------------------------------*/
+input[type=checkbox]#thirteen:checked + label
+{
+background: url("../image/37.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#fourteen:checked + label
+{
+background: url("../image/38.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#fifteen:checked + label
+{
+background: url("../image/39.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#sixteen:checked + label
+{
+background: url("../image/40.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+/* sportgirl */
+/*------------------------------------------------*/
+input[type=checkbox]#seventeen:checked + label
+{
+background: url("../image/41.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#eighteen:checked + label
+{
+background: url("../image/42.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#nineteen:checked + label
+{
+background: url("../image/43.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#twenty:checked + label
+{
+background: url("../image/44.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+/* hipsterwoman */
+/*------------------------------------------------*/
+input[type=checkbox]#twentyone:checked + label
+{
+background: url("../image/45.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#twentytwo:checked + label
+{
+background: url("../image/46.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#twentythree:checked + label
+{
+background: url("../image/47.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#twentyfour:checked + label
+{
+background: url("../image/48.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+/* men */
+/* flowerboy */
+/*------------------------------------------------*/
+input[type=checkbox]#twentyfive:checked + label
+{
+background: url("../image/49.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#twentysix:checked + label
+{
+background: url("../image/50.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#twentyseven:checked + label
+{
+background: url("../image/51.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#twentyeight:checked + label
+{
+background: url("../image/52.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#twentynine:checked + label
+{
+background: url("../image/53.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#thirty:checked + label
+{
+background: url("../image/54.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#thirtyone:checked + label
+{
+background: url("../image/55.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#thirtytwo:checked + label
+{
+background: url("../image/56.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#thirtythree:checked + label
+{
+background: url("../image/33.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#thirtyfour:checked + label
+{
+background: url("../image/34.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#thirtyfive:checked + label
+{
+background: url("../image/35.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#thirtysix:checked + label
+{
+background: url("../image/36.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#thirtyseven:checked + label
+{
+background: url("../image/37.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+/*------------------------------------------------*/
+input[type=checkbox]#thirtyeight:checked + label
+{
+background: url("../image/38.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+/*------------------------------------------------*/
+input[type=checkbox]#thirtynine:checked + label
+{
+background: url("../image/39.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+/*------------------------------------------------*/
+input[type=checkbox]#forty:checked + label
+{
+background: url("../image/40.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+/*------------------------------------------------*/
+input[type=checkbox]#fortyone:checked + label
+{
+background: url("../image/41.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+/*------------------------------------------------*/
+input[type=checkbox]#fortytwo:checked + label
+{
+background: url("../image/42.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+/*------------------------------------------------*/
+input[type=checkbox]#fortythree:checked + label
+{
+background: url("../image/43.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+/*------------------------------------------------*/
+input[type=checkbox]#fortyfour:checked + label
+{
+background: url("../image/44.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#fortyfive:checked + label
+{
+background: url("../image/45.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#fortysix:checked + label
+{
+background: url("../image/46.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#fortyseven:checked + label
+{
+background: url("../image/47.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#fortyeight:checked + label
+{
+background: url("../image/48.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#fortynine:checked + label
+{
+background: url("../image/49.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#fifty:checked + label
+{
+background: url("../image/50.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#fiftyone:checked + label
+{
+background: url("../image/51.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#fiftytwo:checked + label
+{
+background: url("../image/52.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#fiftythree:checked + label
+{
+background: url("../image/53.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#fiftyfour:checked + label
+{
+background: url("../image/54.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#fiftyfive:checked + label
+{
+background: url("../image/55.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+/*------------------------------------------------*/
+input[type=checkbox]#fiftysix:checked + label
+{
+background: url("../image/56.png") no-repeat;
+background-size: 100%;
+height: 130px;
+width: 100px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+
+
+
+
+a {
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+  font-family: cwTeXYen, sans-serif;
+  font-size: 28px;
+  
+  font-weight: 100;
+  display: block;
+  position: absolute;
+  z-index: 3;
+  text-decoration: none;
+  width: 200px;
+  
+  left:70%;
+  top:80%;
+  
+  /* left: 50%; */
+  /* -webkit-transform: translateX(-50%); */
+  /* -moz-transform: translateX(-50%); */
+  /* -o-transform: translateX(-50%); */
+  /* -ms-transform: translateX(-50%); */
+  /* transform: translateX(-50%); */
+  text-align: center;
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 30px;
+}
+a.loading {
+  color: rgba(255,255,255,0);
+}
+a.feedback {
+  z-index: 1;
+}
+a.feedback:after {
+  -webkit-transition: background 0.2s, -webkit-transform 0.2s;
+  -moz-transition: background 0.2s, -moz-transform 0.2s;
+  -o-transition: background 0.2s, -o-transform 0.2s;
+  -ms-transition: background 0.2s, -ms-transform 0.2s;
+  transition: background 0.2s, transform 0.2s;
+  border-radius: 30px;
+  position: absolute;
+  visibility: hidden;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  left: 720;
+  content: '';
+  background: rgba(255,255,255,0.9);
+}
+a:hover {
+  background: rgba(255,255,255,0.1);
+}
+svg {
+	
+  left:70%;
+  top:calc(80% - 95px);
+  
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  width: 200px;
+  height: 220px;
+  cursor: pointer;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+rect {
+  -webkit-transition: fill 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: fill 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: fill 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -ms-transition: fill 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: fill 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  fill: #3e3f4c;
+}
+path {
+  fill: none;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke: #1ecd97;
+  stroke-dashoffset: 0px;
+}
+path#top,
+path#bottom {
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  stroke-dasharray: 295px 1000px;
+}
+.loading-start a {
+  color: rgba(255,255,255,0);
+}
+.loading-start a.loading {
+  color: #fff;
+}
+.loading-start a.feedback:after {
+  left:-8px;
+  visibility: visible;
+  background: rgba(255,255,255,0);
+  -webkit-transform: scale(1.5, 2);
+  -moz-transform: scale(1.5, 2);
+  -o-transform: scale(1.5, 2);
+  -ms-transform: scale(1.5, 2);
+  transform: scale(1.5, 2);
+}
+.loading-start #top,
+.loading-start #bottom {
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  stroke-dasharray: 10px 1000px;
+}
+.loading-progress #top,
+.loading-progress #bottom {
+  -webkit-transition: stroke-dashoffset 1s linear, stroke-dasharray 1s linear;
+  -moz-transition: stroke-dashoffset 1s linear, stroke-dasharray 1s linear;
+  -o-transition: stroke-dashoffset 1s linear, stroke-dasharray 1s linear;
+  -ms-transition: stroke-dashoffset 1s linear, stroke-dasharray 1s linear;
+  transition: stroke-dashoffset 1s linear, stroke-dasharray 1s linear;
+  stroke-dasharray: 10px 1000px;
+  stroke-dashoffset: -150px;
+}
+.loading-end a.loading {
+  color: rgba(255,255,255,0);
+}
+.loading-end #top,
+.loading-end #bottom {
+  stroke: #f5f6f7;
+}
+.loading-end #top {
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  stroke-dasharray: 30px 1000px;
+  stroke-dashoffset: -518px;
+}
+.loading-end #bottom {
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  stroke-dasharray: 10px 1000px;
+  stroke-dashoffset: -490px;
+}
+.loading-end rect {
+  fill: #1ecd97 !important;
+}
+
+
+
+.ha{
+	top:470px;
+	left:1520px;
+	width:0px;
+	height:0px;
+}
+
+
+

@@ -1,0 +1,49 @@
+
+{% load staticfiles %}
+<html>
+	<head>
+		<meta charset="utf-8" http-equiv="refresh" content="6 ; url=http://13.112.236.144:8000/web/matchlist">
+		<link rel="stylesheet" href="{%static 'css/6_loading.css'%}?{% now "U" %}">
+		<title>6.表格loading?</title>
+		<style type="text/css">
+		@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+		 body{
+		 font-family: cwTeXYen, sans-serif;
+		 font-size:20px;
+		 }
+		body{
+		background-image: url(11.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		height: auto;
+		z-index:1;
+		}
+		#layer{
+		background-color:black;
+		height:1000px;
+		opacity:0.5;
+		background-repeat: no-repeat; background-size: 100% 100%;
+		}
+  </style>
+	</head>
+		<div id="layer">
+			<div class="out">
+			  <div class="fade-in">
+				<div class="container">
+				  <div class="one common"></div>
+				  <div class="two common"></div>
+				  <div class="three common"></div>
+				  <div class="four common"></div>
+				  <div class="five common"></div>
+				  <div class="six common"></div>
+				  <div class="seven common"></div>
+				  <div class="eight common"></div>
+				</div>
+				<div class="bar">
+				  <div class="progress"></div>
+			    </div>
+			  </div>
+			 <span>請稍等幾秒鐘，讓我們來幫您進行配對^0^</span>
+		</div>
+		
+</html>
